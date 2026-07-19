@@ -235,3 +235,135 @@ header{
     text-decoration:none;
     font-weight:bold;
 }
+/* =========================
+   Footer
+========================= */
+
+footer{
+    background:linear-gradient(135deg,#0d47a1,#00c853);
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:50px;
+}
+
+footer h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+.social-icons{
+    margin-top:20px;
+}
+
+.social-icons a{
+    display:inline-block;
+    width:45px;
+    height:45px;
+    line-height:45px;
+    text-align:center;
+    border-radius:50%;
+    background:#fff;
+    color:#0d47a1;
+    margin:6px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#ffc107;
+    transform:scale(1.15);
+}
+
+/* Offer Ribbon */
+
+.ribbon{
+    position:absolute;
+    top:12px;
+    left:-35px;
+    width:140px;
+    text-align:center;
+    background:#ff1744;
+    color:#fff;
+    padding:6px;
+    transform:rotate(-45deg);
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* Rating */
+
+.rating{
+    color:#ffb300;
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* Wishlist */
+
+.wishlist{
+    position:absolute;
+    right:15px;
+    top:15px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    cursor:pointer;
+}
+
+/* Banner Animation */
+
+.slider img{
+    animation:fade 1s ease-in-out;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:scale(.96);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.logo h1{
+    font-size:22px;
+}
+
+.hero-text h2{
+    font-size:26px;
+}
+
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+.category-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.search input{
+    font-size:14px;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+}
