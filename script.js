@@ -49,3 +49,16 @@ card.style.display="none";
 }
 
 });
+// Buy Button
+document.querySelectorAll(".buy-btn").forEach(btn=>{
+btn.addEventListener("click",()=>{
+alert("Thank you! Order feature coming soon.");
+});
+});
+
+// Wishlist
+document.querySelectorAll(".wishlist").forEach(item=>{
+item.addEventListener("click",function(){
+this.innerHTML="❤️";
+});
+});
